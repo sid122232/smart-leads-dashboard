@@ -8,7 +8,7 @@ import { globalErrorHandler, notFoundHandler } from './middleware/errorHandler';
 import authRoutes from './routes/auth.routes';
 import leadRoutes from './routes/lead.routes';
 import { logger } from './utils/logger';
-
+import { Request, Response } from 'express';
 const app = express();
 
 // Security headers
@@ -48,7 +48,7 @@ if (config.nodeEnv !== 'test') {
 }
 
 // Health check
-app.get('/health', (_req, res) => {
+app.get('/health', (_req: Request, res: Response) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 

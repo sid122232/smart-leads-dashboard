@@ -1,3 +1,4 @@
+import { Request } from 'express';
 export type UserRole = 'admin' | 'sales';
 
 export type LeadStatus = 'New' | 'Contacted' | 'Qualified' | 'Lost';
