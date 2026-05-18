@@ -31,8 +31,11 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
 
+    "baseUrl": "./src",
 
-  
+    "paths": {
+      "@/*": ["*"]
+    }
   },
 
   "include": ["src"]
