@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-zinc-900 dark:text-gray-100;
+  }
+  
+  /* Force all white cards dark in dark mode */
+  .dark .bg-white {
+    background-color: rgb(39 39 42) !important; /* zinc-800 */
+  }
+  
+  .dark .border-gray-100 {
+    border-color: rgba(255,255,255,0.08) !important;
+  }
+}
