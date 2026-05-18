@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { User, IUser } from '../models/user';
+import { User, IUser } from '../models/User';
 import { config } from '../config';
 import { JwtPayload, UserRole } from '../types';
 import { AppError } from '../middleware/errorHandler';
